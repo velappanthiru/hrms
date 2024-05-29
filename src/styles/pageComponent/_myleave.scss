@@ -1,0 +1,59 @@
+.leavemenu-wrapper {
+  .leave-section__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    @include media-min-md {
+      flex-direction: row;
+    }
+  }
+  .graph-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    @include media-min-lg {
+      flex-direction: row;
+    }
+    @include media-min-xl {
+      gap: 2rem;
+    }
+    .attendance-graph__wrapper, .todo-list__wrapper{
+      width: 100%;
+
+      .graph-box {
+        .graph-header {
+          h2 {
+            margin-bottom: 0;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.6;
+          }
+        }
+        .graph-body {
+          height: 20rem;
+        }
+      }
+    }
+    .attendance-graph__wrapper {
+      @include media-min-lg {
+        width: calc(60% - 0.5rem);
+      }
+      @include media-min-xl {
+        width: calc(60% - 1rem);
+      }
+    }
+    .todo-list__wrapper {
+      @include media-min-lg {
+        width: calc(40% - 0.5rem);
+      }
+      @include media-min-xl {
+        width: calc(40% - 1rem);
+      }
+      .graph-body {
+        overflow: auto;
+        @include scroll-bar(0.15rem,0.15rem);
+      }
+    }
+  }
+}
+

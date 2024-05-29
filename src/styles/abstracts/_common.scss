@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--hrms-primary-clr);
+  font-family: $font-family;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.rechart__custom-tooltip {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  max-width: 200px;
+}
+
+.attendance-wrapper {
+  .attendance-card__wrapper {
+    .attendance-card {
+      flex: 1 1 300px;
+      @include media-max-lg {
+        flex: 1 1 500px;
+      }
+    }
+  }
+}
+
+.box-header__wrapper {
+  h2 {
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+}

@@ -1,0 +1,84 @@
+// ==== Standard Bootstrap Breakpoints ====
+
+$screen-sm: 576px;
+$screen-md: 767px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1400px;
+
+// ==== Custom Breakpoints ====
+
+$screen-alt-363: 363px;
+$screen-alt-480: 480px;
+$screen-alt-768: 768px;
+$screen-alt-1024: 1024px;
+$screen-alt-1350: 1350px;
+$screen-alt-1500: 1500px;
+$screen-alt-1600: 1600px;
+
+// 2560 x 1600
+// 1920 × 1080 (8.89%)
+// 1536 × 864 (3.88%)
+// 1366 × 768 (8.44%)
+// 1024 x 768
+
+// 480 width
+// 375 width
+
+// no use
+// 414×896 (4.58%)
+// 375×667 (3.75%)
+// 360×640 (7.28%)
+
+/*------ font family variable --------
+==================================================*/
+
+$font-family: "Josefin Sans", sans-serif;
+
+:root {
+  --hrms-primary-clr: #F0F1F7;
+  --hrms-secondary-clr: #ffffff;
+
+  // --- ==== background: ; color ==== --- //
+  --hrms-bg-clr-01: #ffffff;
+
+  // --- ==== bg opacity change color ==== --- //
+  --hrms-bg-opa-clr-01: #6B45BC1A;
+
+  // --- ==== text color ==== --- //
+  --hrms-clr-01: #ffffff;
+  --hrms-clr-02: #000000;
+  --hrms-clr-03: #6B45BC;
+  --hrms-clr-04: #495584;
+
+  // --- ==== border color ==== --- //
+  --hrms-border-clr-01: #EAEDF1;
+  --hrms-border-clr-02: #eaedf1;
+
+  // --- ==== icon color ==== --- //
+  --htms-icon-clr-01: #495584;
+
+  // NEUTRAL COLOR
+  --c-neutral-900 : #ffffff;
+}
+
+.dark {
+  --hrms-primary-clr: #2d2f3e;
+  --hrms-secondary-clr: #2d2f3e;
+
+  // --- ==== text color ==== --- //
+  --hrms-clr-01: #000000;
+  --hrms-clr-02: #ffffff;
+  --hrms-clr-03: #6B45BC;
+  --hrms-clr-04: #ffffffcc;
+
+  // --- ==== border color ==== --- //
+  --hrms-border-clr-01: #ffffff26;
+  --hrms-border-clr-02: #ffffff;
+
+  // --- ==== icon color ==== --- //
+  --htms-icon-clr-01: #ffffffcc;
+
+  // NEUTRAL COLOR
+  --c-neutral-900 : #2d2f3e;
+}

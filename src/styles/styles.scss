@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "./abstracts/_abstracts-dir";
+@import  "./baseComponents/_baseComponents.dir";
+@import "./groupComponent/_groupComponent-dir";
+@import "./pageComponent/_pageComponent-dir";
+
+@import "./reset";
+@import "./typography";
+
+.main-wrapper {
+  &.side-menu__is_open {
+    @include media-min-md {
+      margin-left: 15.625rem;
+    }
+  }
+  .main-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    @include media-min-md {
+      padding: 2rem 0;
+      gap: 2rem;
+      height: calc(100vh - 3.5rem);
+      overflow-y: auto;
+      @include scroll-bar(0.15rem,0.15rem);
+    }
+    .page-title-wrapper {
+      margin: 1rem 0;
+      h2 {
+        margin: 0;
+        color: var(--hrms-clr-03);
+        font-size: 1.25rem;
+        line-height: 1.65;
+      }
+    }
+  }
+}

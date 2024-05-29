@@ -1,0 +1,46 @@
+.main-header {
+  background-color: var(--hrms-secondary-clr);
+  border-bottom: 1px solid var(--hrms-border-clr-01);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 3.5rem;
+  nav {
+    padding: 0.75rem;
+    .header-inner {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      .hamburger-icon {
+        cursor: pointer;
+        svg {
+          width: 2rem;
+          height: 2rem;
+          path {
+            stroke: var(--htms-icon-clr-01);
+          }
+        }
+      }
+      .menu-items-wrapper {
+        .menu-items {
+          svg {
+            path {
+              stroke: var(--htms-icon-clr-01);
+            }
+          }
+        }
+      }
+    }
+  }
+  .svg-icon {
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      path {
+        stroke: var(--htms-icon-clr-01);
+      }
+    }
+  }
+}

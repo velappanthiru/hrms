@@ -1,0 +1,117 @@
+.dashboard-wrapper {
+  .ticket-card__wrapper {
+    .ticket-card {
+      width: 100%;
+      &:nth-child(1) {
+        background: linear-gradient(90deg, #664DC9 0%, #9884EA 100%);
+        border: 1px solid #664DC9;
+      }
+      &:nth-child(2) {
+        background: linear-gradient(90deg, #1D976C 0%, #1EB672 100%);
+        border: 1px solid #1D976C;
+      }
+      &:nth-child(3) {
+        background: linear-gradient(90deg, #A69606 0%, #BB9D02 100%);
+        border: 1px solid #A69606;
+      }
+      &:nth-child(4) {
+        background: linear-gradient(90deg, #DC1616 0%, #F84E59 100%);
+        border: 1px solid #DC1616;
+      }
+      @include media-min-md {
+        width: calc(50% - 0.5rem);
+      }
+      @include media-min-lg {
+        width: calc(25% - 1.5rem);
+      }
+    }
+  }
+  .graph-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    @include media-min-lg {
+      flex-direction: row;
+    }
+    @include media-min-xl {
+      gap: 2rem;
+    }
+    .graph-box {
+      .graph-header {
+        h2 {
+          margin-bottom: 0;
+          font-size: 1rem;
+          font-weight: 700;
+          line-height: 1.6;
+        }
+      }
+      .graph-body {
+        overflow: auto;
+        @include scroll-bar(0.15rem,0.15rem);
+        @include media-min-lg {
+          height: 20rem;
+        }
+      }
+    }
+  }
+  .teamandtask__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    @include media-min-lg {
+      flex-direction: row;
+    }
+    @include media-min-xl {
+      gap: 2rem;
+    }
+    .team-wrapper {
+      width: 100%;
+      @include media-min-lg {
+        width: calc(40% - 0.5rem);
+      }
+      @include media-min-xl {
+        width: calc(40% - 1rem);
+      }
+
+      .box {
+        .header {
+          h2 {
+            margin-bottom: 0;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.6;
+          }
+        }
+        .content {
+          height: 20rem;
+        }
+      }
+    }
+    .mytask-wrapper {
+      width: 100%;
+      @include media-min-lg {
+        width: calc(60% - 0.5rem);
+      }
+      @include media-min-xl {
+        width: calc(60% - 1rem);
+      }
+      .box {
+        .header {
+          h2 {
+            margin-bottom: 0;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.6;
+          }
+        }
+        .content {
+          @include media-min-lg {
+            height: 20rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
